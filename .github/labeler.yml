@@ -26,28 +26,16 @@ comments:
 #    - 'include' patterns will associate a label if any of these patterns match
 #    - 'exclude' patterns will ignore this label if any of these patterns match
 labels:
-  'CLEANUP':
+  'bug':
     include:
-      - '^chore:'
+      - '\bbug[s]?\b'
     exclude: []
-  'BUGFIX':
+  'help wanted':
     include:
-      - '^fix:'
-    exclude: []
-  'ENHANCEMENT':
+      - '\bhelp( me)?\b'
+    exclude:
+      - '\b\[test(ing)?\]\b'
+  'enhancement':
     include:
-      - '^enhancement:'
-    exclude: []
-  'FEATURE':
-    include:
-      - '^feat:'
-      - '^feature:'
-    exclude: []
-  'CHANGE':
-    include:
-      - '^docs:'
-    exclude: []
-  'RELEASE-NOTE-NONE':
-    include:
-      - '^NONE:'
+      - '\bfeat\b'
     exclude: []
