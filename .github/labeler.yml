@@ -47,7 +47,7 @@ labels:
     include:
       - '^docs:'
     exclude: []
-  'RELEASE-NOTE-NONE':
+  'release-note-none':
     include:
       - '^NONE:'
     exclude: []
