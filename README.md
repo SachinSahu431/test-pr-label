@@ -1,3 +1,3 @@
 # test-pr-label
 
-test 2
+test new
