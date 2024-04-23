@@ -26,28 +26,27 @@ comments:
 #    - 'include' patterns will associate a label if any of these patterns match
 #    - 'exclude' patterns will ignore this label if any of these patterns match
 labels:
-  'CLEANUP':
+  '/kind CLEANUP':
     include:
-      - '^chore:'
+      - 'chore:'
     exclude: []
-  'BUGFIX':
+  '/kind BUGFIX':
     include:
-      - '^fix:'
+      - 'fix:'
     exclude: []
-  'ENHANCEMENT':
+  '/kind enhancement':
     include:
-      - '^enhancement:'
+      - '\benhancement\b'
     exclude: []
-  'FEATURE':
+  '/kind FEATURE':
     include:
-      - '^feat:'
-      - '^feature:'
+      - '(feat|feature):'
     exclude: []
-  'CHANGE':
+  '/kind CHANGE':
     include:
       - '^docs:'
     exclude: []
   'release-note-none':
     include:
-      - '^NONE:'
+      - 'NONE'
     exclude: []
